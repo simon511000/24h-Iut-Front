@@ -1,0 +1,49 @@
+.proposal {
+  background: rgba(255, 255, 255, .1);
+  border: 1px solid black;
+  border-radius: 3rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+
+  &__header {
+    text-align: center;
+    padding: 1rem 0;
+    background: rgba(255, 255, 255, .05);
+
+    &__end_at {
+      font-size: .9rem;
+      color: rgb(169, 169, 169);
+    }
+  }
+
+  &__description {
+    font-size: .8rem;
+    margin: 0 2rem;
+    padding: 1rem 0;
+    text-align: justify;
+  }
+
+  &__footer {
+    &__progress[value] {
+      appearance: none;
+      width: 100%;
+      border: none;
+    }
+
+    &__buttons {
+      &__button {
+        border: none;
+        width: 50%;
+        padding: .5rem;
+  
+        &--agree {
+          background: #00C853;
+        }
+  
+        &--disagree {
+          background: #FF3D00;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+/*
+duration | timing-function | delay | 
+iteration-count | direction | fill-mode | play-state | name
+*/
+#layer1 {
+  background: transparent;
+  border: dashed 5px #BFF;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation: 2.5s linear 0s infinite spin;
+  position: fixed;
+  left: calc(50% - 30px);
+  top: calc(50% - 30px);
+}
+#layer2 {
+  background: transparent;
+  border: dashed 100px #7FF;
+  opacity: 0.9;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  animation: 3s linear 0s infinite alternate spin;
+  position: fixed;
+  left: calc(50% - 225px);
+  top: calc(50% - 225px);
+}
+#layer3 {
+  background: transparent;
+  border: outset 5px #0AA;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: 2s ease-in-out 0s infinite alternate-reverse spin;
+  position: fixed;
+  left: calc(50% - 55px);
+  top: calc(50% - 55px);
+}
+#layer4 {
+  background: transparent;
+  border: inset 5px #0AA;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  animation: 3.5s ease-in-out 0s infinite spin;
+  position: fixed;
+  left: calc(50% - 255px);
+  top: calc(50% - 255px);
+}
+#layer5 {
+  background: transparent;
+  border: outset 15px #0AA;
+  border-style: inset dashed;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  animation: 3.5s linear 0s infinite reverse spin;
+  position: fixed;
+  left: calc(50% - 90px);
+  top: calc(50% - 90px);
+}
+#layer6 {
+  background: transparent;
+  border: double 25px #BFF;
+  border-style: double dashed;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  animation: 2.5s linear 0s infinite reverse spin;
+  position: fixed;
+  left: calc(50% - 215px);
+  top: calc(50% - 215px);
+  box-shadow: 0 0 0px 3px #BFF;
+}
