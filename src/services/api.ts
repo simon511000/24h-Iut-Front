@@ -31,7 +31,7 @@ export async function getProposals(): Promise<IProposal[]> {
   ]
 }
 
-export async function getHouse(userId: number): Promise<IHouse> {
+export async function getHouse(): Promise<IHouse> {
   await randomWait();
 
   return {
@@ -42,7 +42,7 @@ export async function getHouse(userId: number): Promise<IHouse> {
   };
 }
 
-export async function getEquipments(houseId: number): Promise<IEquipment[]> {
+export async function getEquipments(): Promise<IEquipment[]> {
   await randomWait();
 
   return [

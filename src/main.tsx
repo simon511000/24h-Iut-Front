@@ -1,4 +1,3 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
@@ -14,17 +13,22 @@ dayjs.locale('fr')
 const router = createBrowserRouter([
   {
     path: '/proposals',
-    element: <ProposalPage />,
+    element: <>
+      <Navbar />
+      <ProposalPage />
+    </>,
   },
   {
     path: '/my-house',
-    element: <HousePage />,
+    element: <>
+      <Navbar />
+      <HousePage />
+    </>,
   },
 ])
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <>
-    <Navbar />
     <RouterProvider router={router} />
   </>
 )

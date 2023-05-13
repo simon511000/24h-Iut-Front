@@ -10,10 +10,9 @@ import Equipment from "../components/Equipment";
 export function HousePage() {
   const [house, setHouse] = useState<IHouse | undefined>();
   const [equipments, setEquipments] = useState<IEquipment[] | undefined>();
-  const userId = 1;
 
   useEffect(() => {
-    getHouse(userId).then(setHouse);
+    getHouse().then(setHouse);
   }, []);
 
   useEffect(() => {
@@ -22,7 +21,7 @@ export function HousePage() {
       return;
     }
 
-    getEquipments(house.id).then(setEquipments);
+    getEquipments().then(setEquipments);
   }, [house]);
 
   return (house === undefined || equipments === undefined) ? <Loading /> : (

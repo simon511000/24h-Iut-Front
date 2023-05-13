@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import IProposal from "../interfaces/IProposal";
 import { getProposals } from "../services/api";
 import Loading from "../components/Loading";
